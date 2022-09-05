@@ -3,7 +3,8 @@
 <%@ Register Src="~/Account/OpenAuthProviders.ascx" TagPrefix="uc" TagName="OpenAuthProviders" %>
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>.</h2>
+    <br /><br /><br /><br />
+    <h2>Cuenta</h2>
 
     <div>
         <asp:PlaceHolder runat="server" ID="successMessage" Visible="false" ViewStateMode="Disabled">
@@ -14,10 +15,10 @@
     <div class="row">
         <div class="col-md-12">
             <div class="form-horizontal">
-                <h4>Change your account settings</h4>
+                <h4>Cambiar la configuración de su cuenta</h4>
                 <hr />
                 <dl class="dl-horizontal">
-                    <dt>Password:</dt>
+                    <dt>Contraseña:</dt>
                     <dd>
                         <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Change]" Visible="false" ID="ChangePassword" runat="server" />
                         <asp:HyperLink NavigateUrl="/Account/ManagePassword" Text="[Create]" Visible="false" ID="CreatePassword" runat="server" />
@@ -51,11 +52,11 @@
                     <% } %>
                     --%>
 
-                    <dt>Two-Factor Authentication:</dt>
+                    <dt>Autenticación de dos factores:</dt>
                     <dd>
                         <p>
-                            There are no two-factor authentication providers configured. See <a href="https://go.microsoft.com/fwlink/?LinkId=403804">this article</a>
-                            for details on setting up this ASP.NET application to support two-factor authentication.
+                            No hay proveedores de autenticación de dos factores configurados. Consulte <a href="https://go.microsoft.com/fwlink/?LinkId=403804">este artículo</a>.
+                             para obtener detalles sobre cómo configurar esta aplicación ASP.NET para admitir la autenticación de dos factores.
                         </p>
                         <% if (TwoFactorEnabled)
                           { %> 

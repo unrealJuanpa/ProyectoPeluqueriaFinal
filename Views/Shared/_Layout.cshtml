@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Barbería Caballeros</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -16,10 +16,21 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Acceder a menu de prueba", "Index", "MenuPrincipalPrueba", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="navbar-brand" runat="server" href="~/">Barbería Caballeros</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li><a runat="server" href="~/Clientes/Index">Clientes</a></li>
+                    <li><a runat="server" href="~/Empleadoes/Index">Empleados</a></li>
+                    <li><a runat="server" href="~/Insumoes/Index">Insumos</a></li>
+                    <li><a runat="server" href="~/Promocions/Index">Promociones</a></li>
+                    <li><a runat="server" href="~/Proveedors/Index">Proveedores</a></li>
+                    <li><a runat="server" href="~/Razon_retiro_producto/Index">Razón de Retiro de Productos</a></li>
+                    <li><a runat="server" href="~/Registro_compra/Index">Registro de Compras</a></li>
+                    <li><a runat="server" href="~/registro_tratamiento_cliente/Index">Registro de Tratamientos</a></li>
+                    <li><a runat="server" href="~/Retirar_producto/Index">Retiro de Productos</a></li>
+                    <li><a runat="server" href="~/Rol_empleado/Index">Rol de Empleados</a></li>
+                    <li><a runat="server" href="~/Tipo_tratamiento/Index">Tipo de Tratamiento</a></li>
                 </ul>
             </div>
         </div>
@@ -29,7 +40,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - JJR Systems</p>
         </footer>
     </div>
 
