@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="825fd37f8f4e467dad93312d647d7059" Name="Diagram1">
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.Cliente" Width="1.5" PointX="6.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.Empleado" Width="1.5" PointX="3.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.Insumo" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.Promocion" Width="1.5" PointX="8" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.Proveedor" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.Razon_retiro_producto" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.Registro_compra" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.registro_tratamiento_cliente" Width="1.5" PointX="9" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.Retirar_producto" Width="1.5" PointX="6" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.Rol_empleado" Width="1.5" PointX="1.5" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DatabasePeluqueriaModel.Tipo_tratamiento" Width="1.5" PointX="5.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="DatabasePeluqueriaModel.Relationship22" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabasePeluqueriaModel.Relationship15" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabasePeluqueriaModel.Relationship23" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabasePeluqueriaModel.Relationship25" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabasePeluqueriaModel.Relationship14" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabasePeluqueriaModel.Relationship32" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabasePeluqueriaModel.Relationship31" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabasePeluqueriaModel.Relationship28" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabasePeluqueriaModel.Relationship27" ManuallyRouted="false" />
+        <AssociationConnector Association="DatabasePeluqueriaModel.Relationship29" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
