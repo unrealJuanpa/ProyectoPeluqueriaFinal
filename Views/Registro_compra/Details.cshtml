@@ -1,0 +1,58 @@
+﻿@model ProyectoPeluqueriaFinal.Models.Registro_compra
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Registro_compra</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_compra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_compra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.costo_unidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.costo_unidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.total_unidades)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.total_unidades)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Insumo.Nombre_insumo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Insumo.Nombre_insumo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Proveedor.Nombre_proveedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Proveedor.Nombre_proveedor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_compra }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

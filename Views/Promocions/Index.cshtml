@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ProyectoPeluqueriaFinal.Models.Promocion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre_promocion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_inicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_fin)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.imagen_anuncio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tipo_tratamiento.Nombre_tratamiento)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre_promocion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_inicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_fin)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.imagen_anuncio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tipo_tratamiento.Nombre_tratamiento)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id_promocion }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id_promocion }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id_promocion })
+        </td>
+    </tr>
+}
+
+</table>

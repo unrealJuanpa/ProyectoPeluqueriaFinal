@@ -1,0 +1,48 @@
+﻿@model ProyectoPeluqueriaFinal.Models.Tipo_tratamiento
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Tipo_tratamiento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_tratamiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_tratamiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duracion_horas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duracion_horas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imágen_muestra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imágen_muestra)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

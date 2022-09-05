@@ -1,0 +1,57 @@
+﻿@model IEnumerable<ProyectoPeluqueriaFinal.Models.Retirar_producto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_retiro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Unidades_Retira)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleado.Primer_nombre_empleado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Insumo.Nombre_insumo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Razon_retiro_producto.Nombre_razon_retiro)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fecha_retiro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unidades_Retira)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empleado.Primer_nombre_empleado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Insumo.Nombre_insumo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Razon_retiro_producto.Nombre_razon_retiro)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id_retirar_producto }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id_retirar_producto }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id_retirar_producto })
+        </td>
+    </tr>
+}
+
+</table>

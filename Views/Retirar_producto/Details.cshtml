@@ -1,0 +1,58 @@
+﻿@model ProyectoPeluqueriaFinal.Models.Retirar_producto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Retirar_producto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_retiro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Fecha_retiro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unidades_Retira)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unidades_Retira)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Empleado.Primer_nombre_empleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Empleado.Primer_nombre_empleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Insumo.Nombre_insumo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Insumo.Nombre_insumo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Razon_retiro_producto.Nombre_razon_retiro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Razon_retiro_producto.Nombre_razon_retiro)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_retirar_producto }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,42 @@
+﻿@model ProyectoPeluqueriaFinal.Models.Rol_empleado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Rol_empleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_rol_empleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_rol_empleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nivel_acceso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nivel_acceso)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_rol_empleado }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

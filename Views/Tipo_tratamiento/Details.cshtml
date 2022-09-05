@@ -1,0 +1,42 @@
+﻿@model ProyectoPeluqueriaFinal.Models.Tipo_tratamiento
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tipo_tratamiento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre_tratamiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre_tratamiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duracion_horas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duracion_horas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.imágen_muestra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.imágen_muestra)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id_tipo_tratamiento }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

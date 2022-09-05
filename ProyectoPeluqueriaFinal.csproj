@@ -390,6 +390,17 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\ClientesController.cs" />
+    <Compile Include="Controllers\EmpleadoesController.cs" />
+    <Compile Include="Controllers\InsumoesController.cs" />
+    <Compile Include="Controllers\PromocionsController.cs" />
+    <Compile Include="Controllers\ProveedorsController.cs" />
+    <Compile Include="Controllers\Razon_retiro_productoController.cs" />
+    <Compile Include="Controllers\Registro_compraController.cs" />
+    <Compile Include="Controllers\registro_tratamiento_clienteController.cs" />
+    <Compile Include="Controllers\Retirar_productoController.cs" />
+    <Compile Include="Controllers\Rol_empleadoController.cs" />
+    <Compile Include="Controllers\Tipo_tratamientoController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -473,13 +484,68 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Clientes\Create.cshtml" />
+    <Content Include="Views\Clientes\Delete.cshtml" />
+    <Content Include="Views\Clientes\Details.cshtml" />
+    <Content Include="Views\Clientes\Edit.cshtml" />
+    <Content Include="Views\Clientes\Index.cshtml" />
+    <Content Include="Views\Empleadoes\Create.cshtml" />
+    <Content Include="Views\Empleadoes\Delete.cshtml" />
+    <Content Include="Views\Empleadoes\Details.cshtml" />
+    <Content Include="Views\Empleadoes\Edit.cshtml" />
+    <Content Include="Views\Empleadoes\Index.cshtml" />
+    <Content Include="Views\Insumoes\Create.cshtml" />
+    <Content Include="Views\Insumoes\Delete.cshtml" />
+    <Content Include="Views\Insumoes\Details.cshtml" />
+    <Content Include="Views\Insumoes\Edit.cshtml" />
+    <Content Include="Views\Insumoes\Index.cshtml" />
+    <Content Include="Views\Promocions\Create.cshtml" />
+    <Content Include="Views\Promocions\Delete.cshtml" />
+    <Content Include="Views\Promocions\Details.cshtml" />
+    <Content Include="Views\Promocions\Edit.cshtml" />
+    <Content Include="Views\Promocions\Index.cshtml" />
+    <Content Include="Views\Proveedors\Create.cshtml" />
+    <Content Include="Views\Proveedors\Delete.cshtml" />
+    <Content Include="Views\Proveedors\Details.cshtml" />
+    <Content Include="Views\Proveedors\Edit.cshtml" />
+    <Content Include="Views\Proveedors\Index.cshtml" />
+    <Content Include="Views\Razon_retiro_producto\Create.cshtml" />
+    <Content Include="Views\Razon_retiro_producto\Delete.cshtml" />
+    <Content Include="Views\Razon_retiro_producto\Details.cshtml" />
+    <Content Include="Views\Razon_retiro_producto\Edit.cshtml" />
+    <Content Include="Views\Razon_retiro_producto\Index.cshtml" />
+    <Content Include="Views\Registro_compra\Create.cshtml" />
+    <Content Include="Views\Registro_compra\Delete.cshtml" />
+    <Content Include="Views\Registro_compra\Details.cshtml" />
+    <Content Include="Views\Registro_compra\Edit.cshtml" />
+    <Content Include="Views\Registro_compra\Index.cshtml" />
+    <Content Include="Views\registro_tratamiento_cliente\Create.cshtml" />
+    <Content Include="Views\registro_tratamiento_cliente\Delete.cshtml" />
+    <Content Include="Views\registro_tratamiento_cliente\Details.cshtml" />
+    <Content Include="Views\registro_tratamiento_cliente\Edit.cshtml" />
+    <Content Include="Views\registro_tratamiento_cliente\Index.cshtml" />
+    <Content Include="Views\Retirar_producto\Create.cshtml" />
+    <Content Include="Views\Retirar_producto\Delete.cshtml" />
+    <Content Include="Views\Retirar_producto\Details.cshtml" />
+    <Content Include="Views\Retirar_producto\Edit.cshtml" />
+    <Content Include="Views\Retirar_producto\Index.cshtml" />
+    <Content Include="Views\Rol_empleado\Create.cshtml" />
+    <Content Include="Views\Rol_empleado\Delete.cshtml" />
+    <Content Include="Views\Rol_empleado\Details.cshtml" />
+    <Content Include="Views\Rol_empleado\Edit.cshtml" />
+    <Content Include="Views\Rol_empleado\Index.cshtml" />
+    <Content Include="Views\Tipo_tratamiento\Create.cshtml" />
+    <Content Include="Views\Tipo_tratamiento\Delete.cshtml" />
+    <Content Include="Views\Tipo_tratamiento\Details.cshtml" />
+    <Content Include="Views\Tipo_tratamiento\Edit.cshtml" />
+    <Content Include="Views\Tipo_tratamiento\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,66 @@
+﻿@model ProyectoPeluqueriaFinal.Models.Empleado
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Empleado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Primer_nombre_empleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Primer_nombre_empleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Segundo_nombre_empleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Segundo_nombre_empleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Primer_apellido_empleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Primer_apellido_empleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Segundo_apellido_empleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Segundo_apellido_empleado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dirección)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dirección)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rol_empleado.Nombre_rol_empleado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rol_empleado.Nombre_rol_empleado)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CUI_empleado }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
