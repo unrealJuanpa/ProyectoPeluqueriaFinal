@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ProyectoPeluqueriaFinal.Models.Cliente>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index Menu principal</h2>
+
+<p>
+    @Html.ActionLink("Tipos de tratamiento que se pueden realizar", "Index", "Tipo_tratamiento")
+</p>
+
+<p>
+    @Html.ActionLink("Clientes", "Index", "Clientes")
+</p>
+
+<p>
+    @Html.ActionLink("Roles para empleados", "Index", "Rol_empleado")
+</p>
+
+<p>
+    @Html.ActionLink("Proveedores", "Index", "Proveedors")
+</p>
+
+<p>
+    @Html.ActionLink("Insumos", "Index", "Insumoes")
+</p>
+
+<p>
+    @Html.ActionLink("Razón de retiro de producto", "Index", "Razon_retiro_producto")
+</p>
+
+<p>
+    @Html.ActionLink("Empleados", "Index", "Empleadoes")
+</p>
+
+
+
+<p>
+    @Html.ActionLink("Promociones", "Index", "Promocions")
+</p>
+
+<p>
+    @Html.ActionLink("Registro compra por parte de la peluqueria", "Index", "Registro_compra")
+</p>
+
+<p>
+    @Html.ActionLink("Registro de aplicación de tratamiento a cliente", "Index", "registro_tratamiento_cliente")
+</p>
+
+<p>
+    @Html.ActionLink("Retirar producto", "Index", "Retirar_producto")
+</p>

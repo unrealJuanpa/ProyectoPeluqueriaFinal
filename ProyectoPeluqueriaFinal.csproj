@@ -393,6 +393,7 @@
     <Compile Include="Controllers\ClientesController.cs" />
     <Compile Include="Controllers\EmpleadoesController.cs" />
     <Compile Include="Controllers\InsumoesController.cs" />
+    <Compile Include="Controllers\MenuPrincipalPruebaController.cs" />
     <Compile Include="Controllers\PromocionsController.cs" />
     <Compile Include="Controllers\ProveedorsController.cs" />
     <Compile Include="Controllers\Razon_retiro_productoController.cs" />
@@ -546,6 +547,7 @@
     <Content Include="Views\Tipo_tratamiento\Details.cshtml" />
     <Content Include="Views\Tipo_tratamiento\Edit.cshtml" />
     <Content Include="Views\Tipo_tratamiento\Index.cshtml" />
+    <Content Include="Views\MenuPrincipalPrueba\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
